@@ -1,5 +1,5 @@
 package Ejercicios.E5;
 
-public class MemoriaAlmacena {
+public class Xomi {
     
 }

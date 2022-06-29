@@ -19,7 +19,7 @@ public class SistemaUnversidad implements ISistema{
         System.out.println("Nombre: " + nombre);
         System.out.println("Capacidad: " + capacidad);
         System.out.println("<--- Lista De Estudiantes --->");
-        for (Estudinte estudiante : estudiantes) {
+        for (Estudiante estudiante: estudiantes) {
             System.out.println("Nombre: " + estudiante.getNombre());
             System.out.println("CI: " + estudiante.getCi());
         }

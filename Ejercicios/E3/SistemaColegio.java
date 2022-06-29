@@ -6,9 +6,10 @@ public class SistemaColegio implements ISistema{
     private Estudiante[] estudiantes;
     private String requisitos;
 
-    public SistemaColegio(String nombre, String capacidad,  Estudiante[] estudiantes, String requisitos) {
+    public SistemaColegio(String nombre, String capacidad, Estudiante[] estudiantes, String requisitos) {
         this.nombre = nombre;
         this.capacidad = capacidad;
+        this.estudiantes = estudiantes;
         this.requisitos = requisitos;
     }
 
@@ -18,7 +19,7 @@ public class SistemaColegio implements ISistema{
         System.out.println("Nombre: " + nombre);
         System.out.println("Capacidad: " + capacidad);
         System.out.println("<--- Lista De Estudiantes --->");
-        for (Estudiante estudiante : estudiantes) {
+        for (Estudiante estudiante: estudiantes) {
             System.out.println("Nombre: " + estudiante.getNombre());
             System.out.println("CI: " + estudiante.getCi());
         }
